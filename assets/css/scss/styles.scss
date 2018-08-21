@@ -1,0 +1,16 @@
+// Global
+@import 'global/bootstrap';
+@import 'global/normalize';
+@import 'global/fonts';
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/classes';
+@import 'global/fontawesome';
+
+// Views
+@import 'views/general';
+@import 'views/header';
+@import 'views/footer';
+@import 'views/homepage';
+@import 'views/single';
+@import 'views/about';

@@ -1,0 +1,63 @@
+.navbar {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .navbar-brand {
+    @include font-bold;
+    font-size: 24px;
+    color: $color-black;
+    transition: .6s;
+
+    &:hover {
+      color: lighten($color-black, 80%);
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    opacity: .5;
+    transition: .2s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.collapsed {
+      opacity: 1;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        @include font-semibold;
+        color: $color-grey;
+        font-size: 14px;
+        padding: .6rem;
+        transition: .2s;
+
+        &:hover {
+          color: $color-black;
+        }
+      }
+
+      &.current-menu-item {
+        &::after {
+          content: '';
+          background: $color-black;
+          height: 2px;
+          width: 10px;
+          border-radius: 1px;
+          position: absolute;
+          margin-left: .6rem;
+          margin-top: -.6rem;
+        }
+
+        .nav-link {
+          @include font-bold;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
