@@ -49,6 +49,15 @@ function register_primary_menu() {
 
 add_action( 'after_setup_theme', 'register_primary_menu' );
 
+// Add Footer Menu
+// ---------------------------------
+
+function register_footer_menu() {
+  register_nav_menu( 'footer', __( 'Footer Menu', 'theme-text-domain' ) );
+}
+
+add_action( 'after_setup_theme', 'register_footer_menu' );
+
 // Add Bootstrap 4 classes to Primary Menu
 // ---------------------------------
 
