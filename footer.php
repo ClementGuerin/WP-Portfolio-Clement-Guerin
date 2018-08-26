@@ -1,19 +1,19 @@
 <section class="footer">
   <div class="container">
-    <div class="footer-sentence">
-      Vous avez une question ou vous êtes intéressé pour qu’on travaille ensemble sur un projet ?
-      <br>
-      Alors n’hésitez pas à me contacter !
-    </div>
-    <div class="footer-contact">
-      <a href="#" class="btn btn-custom btn-primary">
-        Me contacter
-      </a>
-    </div>
+    <?php if (!is_page('qui-suis-je') && function_exists('get_field')) : ?>
+      <div class="footer-sentence wow fadeIn">
+          <?php the_field('footer_text', 31); ?>
+      </div>
+      <div class="footer-contact wow fadeIn">
+        <a href="<?php the_field('footer_btn_href', 31); ?>" class="btn btn-custom btn-primary">
+          <?php the_field('footer_btn_text', 31); ?>
+        </a>
+      </div>
+    <?php endif; ?>
     <?php
       wp_nav_menu(array(
         'theme_location' => 'footer',
-        'menu_class' => 'footer-menu'
+        'menu_class' => 'footer-menu wow fadeIn'
       ));
     ?>
   </div>

@@ -1,10 +1,5 @@
 <?php
 
-// Add Thumbnails support
-// ---------------------------------
-
-add_theme_support('post-thumbnails');
-
 // Load CSS and JS files
 // ---------------------------------
 
@@ -72,3 +67,18 @@ function add_classes_on_a($classes) {
   return $classes;
 }
 add_filter( 'nav_menu_link_attributes', 'add_classes_on_a');
+
+// Add class to Wordpress excerpt
+// ---------------------------------
+
+function add_class_excerpt($excerpt) {
+  $excerpt = str_replace( "<p", "<p class=\"excerpt\"", $excerpt );
+  return $excerpt;
+}
+
+add_filter('the_excerpt',  'add_class_excerpt');
+
+// Support thumbnails
+// ---------------------------------
+
+add_theme_support( 'post-thumbnails' );

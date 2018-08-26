@@ -7,10 +7,10 @@ section.header {
       @include font-bold;
       font-size: 24px;
       color: $color-black;
-      transition: .6s;
+      transition: .2s;
 
       &:hover {
-        color: lighten($color-black, 80%);
+        color: lighten($color-black, 30%);
       }
     }
 

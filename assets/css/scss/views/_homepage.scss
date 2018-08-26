@@ -1,2 +1,64 @@
-.home{
+section.homepage{
+  margin-top: 30px;
+  
+  .homepage-primary-articles{
+    .homepage-article{
+      .homepage-article-thumbnail{
+        height: 340px;
+        
+        @include responsive-below(md) {
+          height: 220px;
+        }
+      }  
+    }  
+  }
+  .homepage-secondary-articles{
+    padding-top: 50px;
+    
+    .homepage-article{
+      .homepage-article-thumbnail{
+        height: 220px;
+      }  
+    }
+  }
+  
+  .homepage-article{
+    margin-bottom: 30px;
+    
+    .homepage-article-thumbnail{
+      background: $background-placeholder;
+      overflow: hidden;
+      
+      & img{
+        height: 100%;
+        width: 100%;
+        transition: .2s;
+
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .homepage-article-title{
+      @include font-bold;
+      font-size: 16px;
+      color: $color-black;
+      padding-top: 30px;
+      margin: 0;
+
+      & > a{
+        color: inherit;
+      }
+    }
+
+    .excerpt{ // Use Wordpress class (added with function.php)
+      @include font-medium;
+      font-size: 13px;
+      line-height: 1.6;
+      color: $color-grey;
+      padding-top: 15px;
+      margin: 0;
+    }
+  }
 }
