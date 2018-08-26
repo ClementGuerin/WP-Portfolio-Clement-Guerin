@@ -5,6 +5,13 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width">
   <link rel="profile" href="http://gmpg.org/xfn/11">
+  <title>
+    <?php if(is_front_page() || is_home()){
+      echo 'Portfolio - ' . get_bloginfo('name');
+    } else{
+      echo wp_title('') . ' - ' . get_bloginfo('name');
+    }?>
+  </title>
   <?php wp_head(); ?>
 </head>
 
