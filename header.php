@@ -12,6 +12,27 @@
       echo wp_title('') . ' - ' . get_bloginfo('name');
     }?>
   </title>
+  <meta name="description" content="Portfolio de Clément Guérin, UX/UI Designer - Fullstack Developer">
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content=" Portfolio - Clément Guérin ">
+  <meta itemprop="description" content="Portfolio de Clément Guérin, UX/UI Designer - Fullstack Developer">
+  <meta itemprop="image" content="https://www.clement-guerin.fr/wp-content/uploads/2018/08/screenshot.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://www.clement-guerin.fr/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content=" Portfolio - Clément Guérin ">
+  <meta property="og:description" content="Portfolio de Clément Guérin, UX/UI Designer - Fullstack Developer">
+  <meta property="og:image" content="https://www.clement-guerin.fr/wp-content/uploads/2018/08/screenshot.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content=" Portfolio - Clément Guérin ">
+  <meta name="twitter:description" content="Portfolio de Clément Guérin, UX/UI Designer - Fullstack Developer">
+  <meta name="twitter:image" content="https://www.clement-guerin.fr/wp-content/uploads/2018/08/screenshot.png">
+
+  <!-- Meta Tags Generated via http://heymeta.com -->
   <?php wp_head(); ?>
 </head>
 
