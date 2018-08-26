@@ -26,7 +26,6 @@ section.homepage{
     margin-bottom: 30px;
     
     .homepage-article-thumbnail{
-      background: $background-placeholder;
       overflow: hidden;
       
       & img{
@@ -35,7 +34,7 @@ section.homepage{
         transition: .2s;
 
         &:hover{
-          transform: scale(1.1);
+          transform: scale(0.95);
         }
       }
     }
